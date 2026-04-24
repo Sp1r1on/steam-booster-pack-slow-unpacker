@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Booster Slow Unpacker",
+  "description": "Opens Steam booster packs one by one with randomized delays and queue controls to reduce unnecessary load.",
+  "version": "1.2.1",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://steamcommunity.com/*"
+  ],
+  "action": {
+    "default_title": "Steam Booster Slow Unpacker",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://steamcommunity.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

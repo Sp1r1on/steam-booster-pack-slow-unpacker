@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steam Booster Slow Unpacker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Steam Booster Slow Unpacker</h1>
+      <div class="version" id="version-text">Version -</div>
+      <p class="hint">Open your own Steam Community inventory, then start the queue from the page or from this popup.</p>
+
+      <label class="field" for="delay-min-seconds">
+        <span>Delay min (seconds)</span>
+        <input id="delay-min-seconds" type="number" min="11" step="1" value="15">
+      </label>
+
+      <label class="field" for="delay-max-seconds">
+        <span>Delay max (seconds)</span>
+        <input id="delay-max-seconds" type="number" min="11" step="1" value="22">
+      </label>
+
+      <div class="buttons">
+        <button id="start-button" class="button primary" type="button">Start</button>
+        <button id="pause-button" class="button warning" type="button">Pause</button>
+        <button id="stop-button" class="button danger" type="button">Stop</button>
+      </div>
+
+      <section class="status">
+        <div><strong>Status:</strong> <span id="status-text">Checking...</span></div>
+        <div><strong>Queue:</strong> <span id="queue-text">-</span></div>
+        <div><strong>Delay range:</strong> <span id="range-text">-</span></div>
+        <div><strong>Estimated left:</strong> <span id="eta-text">-</span></div>
+        <div><strong>Current:</strong> <span id="current-text">-</span></div>
+        <div><strong>Next in:</strong> <span id="next-text">-</span></div>
+        <div><strong>Last:</strong> <span id="last-text">-</span></div>
+        <div><strong>Error:</strong> <span id="error-text">-</span></div>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
