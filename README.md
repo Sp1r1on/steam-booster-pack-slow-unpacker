@@ -70,23 +70,6 @@ Current permissions are intentionally limited:
 - `CONTRIBUTING.md`: contribution notes
 - `GITHUB_PUBLISHING.md`: website upload guide
 
-## Publishing On GitHub
-
-If you are new to GitHub, follow the guide in [GITHUB_PUBLISHING.md](GITHUB_PUBLISHING.md).
-
-Suggested repository name:
-
-`steam-booster-slow-unpacker`
-
-Suggested repository description:
-
-`Chrome extension for opening Steam booster packs one by one with randomized delays, pause/resume controls, and safer queue pacing.`
-
-## Notes
-
-- This repository is source code only
-- It is suitable for GitHub publishing
-- If you later want broader public distribution, the next step after GitHub would usually be packaging for the Chrome Web Store
 
 ## License
 
